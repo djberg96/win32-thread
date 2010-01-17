@@ -1,0 +1,18 @@
+== 0.0.3 - 21-Aug-2009
+* Changed the license to Artistic 2.0.
+* Removed C related code from the Rakefile. Also, the original C code has been
+  sent to its own branch in the repository.
+* Updates to the gemspec, including the license and description.
+* Renamed the test and example files.
+
+== 0.0.2 - 18-May-2008
+* This library is now pure Ruby, using the windows-pr library.
+* Added a Rakefile with tasks for installation and testing.
+* Added a gemspec and a gem file.
+* Moved the C source files. These are in the SCM repository, but are not
+  included as part of the release.
+* Merged the doc files into the README. The API documentation is now inlined,
+  so it can be generated automatically.
+
+== 0.0.1 - 13-Dec-2004
+* Initial release

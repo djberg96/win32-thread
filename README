@@ -1,0 +1,48 @@
+= Description
+   A Ruby implementation for native Windows threads.
+
+= Warning
+   This is a highly unstable and experimental attempt to wrap native Windows 
+   threads.
+
+= Synopsis
+   require 'win32/thread'
+
+   thread = Win32::Thread.new('a', 'b'){ |x,y| puts "X: #{x}, Y: #{y}" }
+   puts "Done"
+   thread.join
+
+= Installation
+   rake install (non-gem) or rake install_gem (gem)
+
+= Technical Notes
+   This wraps the CreateThread() function from the Windows API. It passes
+   the block and its parameters to a thread function, where it is then
+   executed.
+
+= Known Bugs
+   Segfaults when you attempt to create more than one thread.
+   Does not seem to handle arguments to the thread block correctly when more
+   than one thread is created.
+	
+= Future Plans
+   Eliminate known bugs
+   Add more methods
+	
+= Copyright
+   (C) 2003-2009, Daniel J. Berger, All Rights Reserved
+    
+= License
+   Artistic 2.0
+    
+= Warranty
+   This package is provided "as is" and without any express or
+   implied warranties, including, without limitation, the implied
+   warranties of merchantability and fitness for a particular purpose.
+	
+   This is ALPHA code.  It is absolutely not meant to be used in a
+   production environment.
+	
+= Author
+   Daniel J. Berger
+   Park Heesob
