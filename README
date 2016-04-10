@@ -1,9 +1,14 @@
 = Description
-   A Ruby implementation for native Windows threads.
+   A Ruby wrapper for native Windows API thread functions.
 
-= Warning
-   This is a highly unstable and experimental attempt to wrap native Windows 
-   threads.
+= WARNING
+   This was a highly unstable and experimental attempt to wrap native Windows 
+   threads and should not be used. It was originally written before Ruby
+   supported native threads.
+
+   The gems for this library have been yanked, and this library should be
+   considered unsupported. Please do not post issues. It has been left online
+   for academic/historical interest only.
 
 = Synopsis
    require 'win32/thread'
@@ -26,11 +31,10 @@
    than one thread is created.
 	
 = Future Plans
-   Eliminate known bugs
-   Add more methods
+  None. See warning above.
 	
 = Copyright
-   (C) 2003-2009, Daniel J. Berger, All Rights Reserved
+   (C) 2003-2016, Daniel J. Berger, All Rights Reserved
     
 = License
    Artistic 2.0
@@ -40,8 +44,8 @@
    implied warranties, including, without limitation, the implied
    warranties of merchantability and fitness for a particular purpose.
 	
-   This is ALPHA code.  It is absolutely not meant to be used in a
-   production environment.
+   This is ALPHA code. It is absolutely not meant to be used in a
+   production environment. See warning above.
 	
 = Author
    Daniel J. Berger
